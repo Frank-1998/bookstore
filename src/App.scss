@@ -1,3 +1,4 @@
+
 /* utility class */
 .container {
   width: 100%;
@@ -5,43 +6,51 @@
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  // border: 1px solid red;
 }
 
-@media (min-width: 320px) {
-  .container {
+@media (min-width: 320px){
+  .container{
     max-width: 320px;
   }
 }
-@media (min-width: 375px) {
-  .container {
+
+@media (min-width: 375px){
+  .container{
     max-width: 375px;
   }
 }
-@media (min-width: 425px) {
-  .container {
+
+@media (min-width: 425px){
+  .container{
     max-width: 425px;
   }
 }
-@media (min-width: 768px) {
-  .container {
+
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
-@media (min-width: 1024px) {
-  .container {
+
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
-@media (min-width: 1440px) {
-  .container {
+
+@media (min-width: 1440px){
+  .container{
     max-width: 1440px;
   }
 }
-@media (min-width: 2560px) {
-  .container {
+
+@media (min-width: 2560px){
+  .container{
     max-width: 2560px;
   }
 }
+
 .header {
   margin-top: 10px;
   align-items: center;
@@ -51,6 +60,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.bookList {
+.bookList{
   margin-top: 20px;
-}/*# sourceMappingURL=App.css.map */
+}
