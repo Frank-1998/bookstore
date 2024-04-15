@@ -43,7 +43,7 @@
   }
 }
 .header {
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -53,4 +53,43 @@
 
 .bookList {
   margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+}
+
+.addBookButton {
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  margin: 1%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  outline: 0;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.addBookButton .addIcon {
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  max-width: 20%;
+  height: auto;
+}
+.addBookButton:hover {
+  border: 0px;
+  background-color: aliceblue;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.addBookButton:hover .addIcon {
+  transform: rotate(90deg);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.addBookButton:active {
+  transform: translateY(4px);
+  transition-duration: 100ms;
 }/*# sourceMappingURL=App.css.map */

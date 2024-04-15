@@ -1,9 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface Book {
+export interface Book {
   id: number;
   name: string;
-  price: number;
+  price: string;
   category: string;
   description: string;
 }
@@ -17,14 +17,14 @@ const initialState: BooksState = {
     {
       id: 0,
       name: "book1",
-      price: 20.0,
+      price: "20.0",
       category: "fiction",
       description: "good book",
     },
     {
       id: 1,
       name: "book2",
-      price: 20.0,
+      price: "20.0",
       category: "fiction",
       description: "good book",
     },

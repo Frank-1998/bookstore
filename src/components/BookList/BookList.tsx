@@ -1,18 +1,15 @@
 // components/BookList.tsx
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../store/store';
-import { deleteBook } from '../store/bookSlice';
+import { RootState } from '../../store/store';
+import { deleteBook } from '../../store/bookSlice';
+import { Book } from '../../store/bookSlice';
 
-interface BookProps {
-  id: number;
-  name: string;
-  price: number;
-  category: string;
-  description: string;
+interface BookListProps {
+  onEdit: (book: Book) => void;
 }
 
-const BookList: React.FC = () => {
+const BookList: React.FC<BookListProps> = ({ onEdit }) => {
   const books = useSelector((state: RootState) => state.books.books);
   const dispatch = useDispatch();
 
@@ -24,9 +21,9 @@ const BookList: React.FC = () => {
     <div>
       {books.length > 0 ? (
         <ul>
-          {books.map((book: BookProps) => (
+          {books.map((book: Book) => (
             <li key={book.id}>
-              <h3>{book.name}</h3>
+              <h3 onClick={()=> onEdit(book)}>{book.name}</h3>
               <p>Price: {book.price}</p>
               <p>Category: {book.category}</p>
               <button onClick={() => handleDelete(book.id)}>Delete</button>
