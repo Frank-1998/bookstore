@@ -1,10 +1,8 @@
 // components/EditBookModal.tsx
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 import { useDispatch } from 'react-redux';
 import { updateBook } from '../../store/bookSlice';
-
-Modal.setAppElement('#root');
+import Modal from '../Modal/Modal';
 
 interface Props {
   book: {
@@ -39,9 +37,8 @@ const EditBookModal: React.FC<Props> = ({ book, isOpen, onRequestClose }) => {
 
   return (
     <Modal
-      isOpen={isOpen}
-      onRequestClose={onRequestClose}
-      contentLabel="Edit Book"
+      open={isOpen}
+      onClose={onRequestClose}
     >
       <h2>Edit Book</h2>
       <form onSubmit={handleSubmit}>
