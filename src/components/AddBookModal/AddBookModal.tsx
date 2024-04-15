@@ -1,12 +1,9 @@
 // components/AddBookModal.tsx
 import React, { useState } from "react";
-import ReactModal from "react-modal";
 import { useDispatch } from "react-redux";
 import { addBook } from "../../store/bookSlice";
 import Modal from "../Modal/Modal";
 
-// Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
-ReactModal.setAppElement("#root");
 
 interface Props {
   isOpen: boolean;
