@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { bookImage, orangeCity, vow, waiting, whoIsBack } from "../assets/images";
 
 export interface Book {
   id: number;
@@ -6,6 +7,7 @@ export interface Book {
   price: string;
   category: string;
   description: string;
+  imageUrl: string;
 }
 
 interface BooksState {
@@ -19,14 +21,24 @@ const initialState: BooksState = {
       name: "book1",
       price: "20.0",
       category: "fiction",
-      description: "good book",
+      description: "A book description is a short summary of a book’s story or content that is designed to “hook” a reader and lead to a sale. Typically, the book’s description conveys important information about its topic or focus (in nonfiction) or the plot and tone (for a novel or any other piece of fiction). Readers can usually find the back description on the back cover of a book, or prominently displayed on retailer websites, like Amazon.",
+      imageUrl: whoIsBack,
     },
     {
       id: 1,
       name: "book2",
       price: "20.0",
       category: "fiction",
-      description: "good book",
+      description: "A book description is a short summary of a book’s story or content that is designed to “hook” a reader and lead to a sale. Typically, the book’s description conveys important information about its topic or focus (in nonfiction) or the plot and tone (for a novel or any other piece of fiction). Readers can usually find the back description on the back cover of a book, or prominently displayed on retailer websites, like Amazon.",
+      imageUrl: vow,
+    },
+    {
+      id: 2,
+      name: "book3",
+      price: "20.0",
+      category: "fiction",
+      description: "A book description is a short summary of a book’s story or content that is designed to “hook” a reader and lead to a sale. Typically, the book’s description conveys important information about its topic or focus (in nonfiction) or the plot and tone (for a novel or any other piece of fiction). Readers can usually find the back description on the back cover of a book, or prominently displayed on retailer websites, like Amazon.",
+      imageUrl: waiting,
     },
   ],
 };

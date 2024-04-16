@@ -7,9 +7,26 @@
   padding-right: 0.5rem;
 }
 
+.allBody {
+  background-image: url("./assets/images/bgAI.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+
 @media (min-width: 320px) {
   .container {
     max-width: 320px;
+  }
+  .header h1 {
+    font-size: larger;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton h3 {
+    font-size: small;
   }
 }
 @media (min-width: 375px) {
@@ -41,6 +58,9 @@
   .container {
     max-width: 2560px;
   }
+  .header h1 {
+    font-size: xx-large;
+  }
 }
 .header {
   margin-top: 20px;
@@ -48,12 +68,15 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header h1 {
+  font-size: xx-large;
 }
 
 .bookList {
   margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
   display: grid;
 }
 
@@ -61,9 +84,9 @@
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
   margin: 1%;
-  background-color: white;
+  background-color: black;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   outline: 0;
   border: 1px solid;
   display: flex;
@@ -71,23 +94,31 @@
   align-items: center;
   gap: 10px;
 }
-.addBookButton .addIcon {
+.addBookButton .addIconBlack {
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
   max-width: 20%;
   height: auto;
 }
+.addBookButton h3 {
+  color: white;
+  font-family: cursive;
+}
 .addBookButton:hover {
+  cursor: pointer;
   border: 0px;
   background-color: aliceblue;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.addBookButton:hover .addIcon {
+.addBookButton:hover .addIconBlack {
   transform: rotate(90deg);
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
+}
+.addBookButton:hover h3 {
+  color: black;
 }
 .addBookButton:active {
   transform: translateY(4px);

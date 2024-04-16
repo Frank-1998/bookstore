@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import { useAppSelector, useAppDispatch } from "./store/hooks";
-import { useDispatch } from "react-redux";
 import BookList from "./components/BookList/BookList";
-import { book, addIcon } from "./assets/icons";
+import { book, addIcon} from "./assets/icons";
 import { Book } from "./store/bookSlice";
 import AddBookModal from "./components/AddBookModal/AddBookModal";
 import EditBookModal from "./components/EditBook/EditBook";
@@ -27,7 +25,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="allBody">
       <div className="container header">
         <img src={book} alt="book_logo" />
         <h1>BlazeBookStore</h1>
@@ -37,7 +35,7 @@ function App() {
         <div className="bookListHeader">
           <button className="addBookButton" onClick={openAddModal}>
             <h3>Add Book</h3>
-            <img src={addIcon} alt="add" className="addIcon" />
+            {/* <img src={addIcon} alt="add" className="addIconBlack" /> */}
           </button>
         </div>
         <BookList onEdit={openEditModal} />
