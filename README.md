@@ -1,6 +1,6 @@
 # Blaze Book Store test by Frank Li
 
-##[Live Link](https://blazebookstorefr.netlify.app/)
+## [Live Link](https://blazebookstorefr.netlify.app/)
 
 ## Tech Stack: 
 
