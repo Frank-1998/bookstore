@@ -14,54 +14,6 @@
   min-height: 100vh;
 }
 
-@media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-  .header h1 {
-    font-size: larger;
-  }
-  .header img {
-    width: 40px;
-    height: 40px;
-  }
-  .addBookButton h3 {
-    font-size: small;
-  }
-}
-@media (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
-}
-@media (min-width: 425px) {
-  .container {
-    max-width: 425px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-@media (min-width: 2560px) {
-  .container {
-    max-width: 2560px;
-  }
-  .header h1 {
-    font-size: xx-large;
-  }
-}
 .header {
   margin-top: 20px;
   align-items: center;
@@ -86,7 +38,8 @@
   margin: 1%;
   background-color: black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
+  padding-inline: 30px;
   outline: 0;
   border: 1px solid;
   display: flex;
@@ -102,6 +55,7 @@
 }
 .addBookButton h3 {
   color: white;
+  font-size: medium;
   font-family: cursive;
 }
 .addBookButton:hover {
@@ -123,4 +77,138 @@
 .addBookButton:active {
   transform: translateY(4px);
   transition-duration: 100ms;
+}
+
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+  .header h1 {
+    font-size: larger;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton {
+    padding: 2px;
+    padding-inline: 5px;
+  }
+  .addBookButton h3 {
+    font-size: x-small;
+  }
+}
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .header h1 {
+    font-size: larger;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton {
+    padding: 5px;
+    padding-inline: 20px;
+  }
+  .addBookButton h3 {
+    font-size: small;
+  }
+}
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+  .header h1 {
+    font-size: larger;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton {
+    padding: 5px;
+    padding-inline: 30px;
+  }
+  .addBookButton h3 {
+    font-size: small;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .header h1 {
+    font-size: larger;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton {
+    padding: 5px;
+    padding-inline: 30px;
+  }
+  .addBookButton h3 {
+    font-size: medium;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .header h1 {
+    font-size: x-large;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton {
+    padding: 5px;
+    padding-inline: 30px;
+  }
+  .addBookButton h3 {
+    font-size: medium;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+  .header h1 {
+    font-size: xx-large;
+  }
+  .header img {
+    width: 40px;
+    height: 40px;
+  }
+  .addBookButton {
+    padding: 5px;
+    padding-inline: 30px;
+  }
+  .addBookButton h3 {
+    font-size: medium;
+  }
+}
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2560px;
+  }
+  .header h1 {
+    font-size: xx-large;
+  }
+  .header img {
+    width: 50px;
+    height: 50px;
+  }
+  .addBookButton {
+    padding: 5px;
+    padding-inline: 30px;
+  }
+  .addBookButton h3 {
+    font-size: xx-large;
+  }
 }/*# sourceMappingURL=App.css.map */
